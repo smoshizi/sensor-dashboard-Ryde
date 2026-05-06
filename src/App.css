@@ -1,0 +1,74 @@
+:root {
+  --card-h: 300px;
+}
+
+.plots-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
+  gap: 28px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto 24px;
+  align-items: stretch;
+}
+
+.plots-grid > * {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+/* 2 gauges centered */
+.gauges-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 240px));
+  gap: 24px;
+  width: 100%;
+  max-width: 560px;
+  margin: 24px auto 0;
+  align-items: start;
+  justify-items: center;
+}
+
+.gauge-card {
+  width: 100%;
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.gauge-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1400px) {
+  :root { --card-h: 260px; }
+  .plots-grid { grid-template-columns: repeat(2, minmax(240px, 1fr)); }
+  .gauge-card { padding: 14px; }
+  .gauge-card h3 { font-size: 1rem; margin-bottom: 8px; }
+}
+
+@media (max-width: 1000px) {
+  :root { --card-h: 220px; }
+  .plots-grid { grid-template-columns: repeat(2, minmax(200px, 1fr)); gap: 20px; }
+  .gauges-grid { grid-template-columns: repeat(2, minmax(140px, 200px)); gap: 16px; }
+  .gauge-card { padding: 12px; }
+  .gauge-card h3 { font-size: 0.95rem; margin-bottom: 6px; }
+}
+
+@media (max-width: 700px) {
+  :root { --card-h: 200px; }
+  .plots-grid { grid-template-columns: 1fr; gap: 16px; }
+  .gauges-grid { grid-template-columns: 1fr; max-width: 320px; }
+  .plots-grid > * { padding: 8px; }
+  .gauge-card { padding: 10px; }
+  .gauge-card h3 { font-size: 0.95rem; margin: 6px 0; }
+}
