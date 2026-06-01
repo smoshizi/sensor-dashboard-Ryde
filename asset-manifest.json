@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sensor-dashboard-Ryde/static/css/main.12798e23.css",
-    "main.js": "/sensor-dashboard-Ryde/static/js/main.0f242051.js",
+    "main.js": "/sensor-dashboard-Ryde/static/js/main.981ca0c6.js",
     "static/js/453.6be86ec8.chunk.js": "/sensor-dashboard-Ryde/static/js/453.6be86ec8.chunk.js",
     "index.html": "/sensor-dashboard-Ryde/index.html",
     "main.12798e23.css.map": "/sensor-dashboard-Ryde/static/css/main.12798e23.css.map",
-    "main.0f242051.js.map": "/sensor-dashboard-Ryde/static/js/main.0f242051.js.map",
+    "main.981ca0c6.js.map": "/sensor-dashboard-Ryde/static/js/main.981ca0c6.js.map",
     "453.6be86ec8.chunk.js.map": "/sensor-dashboard-Ryde/static/js/453.6be86ec8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.12798e23.css",
-    "static/js/main.0f242051.js"
+    "static/js/main.981ca0c6.js"
   ]
 }
